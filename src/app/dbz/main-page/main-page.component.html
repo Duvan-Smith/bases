@@ -14,8 +14,8 @@
         <h3>Agregar con $evente</h3>
         <hr>
         <form (submit)="agregarEvent($event)">
-            <input type="text" placeholder="Nombre" />
-            <input type="number" placeholder="Poder" />
+            <input type="text" placeholder="Nombre" [value]="nuevo.nombre" (input)="cambiarNombre($event)" />
+            <input type="number" placeholder="Poder" [value]="nuevo.poder" />
             <button type="submit">
                 Agregar
             </button>
@@ -25,8 +25,8 @@
         <h3>Agregar sin $event</h3>
         <hr>
         <form (ngSubmit)="agregar()">
-            <input type="text" placeholder="Nombre" />
-            <input type="number" placeholder="Poder" />
+            <input type="text" placeholder="Nombre" [value]="nuevo.nombre" name="nombre" [(ngModel)]="nuevo.nombre" />
+            <input type="number" placeholder="Poder" [value]="nuevo.poder" name="poder" [(ngModel)]="nuevo.poder"  />
             <button type="submit">
                 Agregar
             </button>
