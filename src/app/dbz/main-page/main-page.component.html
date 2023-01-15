@@ -17,14 +17,6 @@
         </form>
     </div>
     <div class="col">
-        <h3>Agregar sin $event</h3>
-        <hr>
-        <form (ngSubmit)="agregar()">
-            <input type="text" placeholder="Nombre" [value]="nuevo.nombre" name="nombre" [(ngModel)]="nuevo.nombre" />
-            <input type="number" placeholder="Poder" [value]="nuevo.poder" name="poder" [(ngModel)]="nuevo.poder"  />
-            <button type="submit">
-                Agregar
-            </button>
-        </form>
+        <app-agregar [personajes]="personajes" [nuevo]="nuevo"></app-agregar>
     </div>
 </div>
