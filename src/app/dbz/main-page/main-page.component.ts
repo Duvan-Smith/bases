@@ -32,4 +32,8 @@ export class MainPageComponent {
     event.preventDefault();
     console.log(event.target.value);
   }
+
+  agregarNuevoPersonaje(personaje:Personaje){
+    this.personajes.push(personaje);
+  }
 }
