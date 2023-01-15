@@ -16,14 +16,4 @@ export class MainPageComponent {
     nombre: 'Trucks',
     poder: 14000,
   };
-
-  agregarEvent(event: any) {
-    event.preventDefault();
-    console.log(this.nuevo);
-  }
-
-  cambiarNombre(event: any) {
-    event.preventDefault();
-    console.log(event.target.value);
-  }
 }

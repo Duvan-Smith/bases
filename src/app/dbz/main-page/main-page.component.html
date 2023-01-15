@@ -6,17 +6,6 @@
         </app-personajes>
     </div>
     <div class="col">
-        <h3>Agregar con $evente</h3>
-        <hr>
-        <form (submit)="agregarEvent($event)">
-            <input type="text" placeholder="Nombre" [value]="nuevo.nombre" (input)="cambiarNombre($event)" />
-            <input type="number" placeholder="Poder" [value]="nuevo.poder" />
-            <button type="submit">
-                Agregar
-            </button>
-        </form>
-    </div>
-    <div class="col">
         <app-agregar [nuevo]="nuevo">
         </app-agregar>
     </div>
