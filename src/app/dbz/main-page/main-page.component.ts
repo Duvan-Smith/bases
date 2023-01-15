@@ -12,17 +12,6 @@ export class MainPageComponent {
   constructor(private dbzService:DbzService){
   }
 
-  personajes: Personaje[] = [
-    {
-      nombre: 'Goku',
-      poder: 150000,
-    },
-    {
-      nombre: 'Vegeta',
-      poder: 140000,
-    },
-  ];
-
   nuevo: Personaje = {
     nombre: 'Trucks',
     poder: 14000,
@@ -36,10 +25,5 @@ export class MainPageComponent {
   cambiarNombre(event: any) {
     event.preventDefault();
     console.log(event.target.value);
-  }
-
-  agregarNuevoPersonaje(personaje:Personaje){
-    // debugger;
-    this.personajes.push(personaje);
   }
 }
