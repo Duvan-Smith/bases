@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent {
-
+  agregarEvent(event:any){
+    event.preventDefault();
+    console.log("pruebas con event")
+  }
+  agregar(){
+    console.log("pruebas")
+  }
 }
